@@ -10,6 +10,62 @@
     <h2>Hello Git!</h2>
     <h2>Hello Git!</h2>
     <h2>Hello Git!</h2>
+
+    git  分布式版本管理工具代表
+
+    是一个应用程序 需要按转
+
+    可以放心大胆地进行版本回退
+    
+    使用前需要进行全局配置
+
+    git config --global user.email "896518640@qq.com"
+
+    git config --global user.name "tx"
+
+    1.交给git 进行管理
+
+    2.把文件交给暂存区 
+
+    工作区 项目的文件夹 git01
+    
+    交给git管理 git 包括 暂存区 和 本地仓库
+    git add name 存放至暂存区
+
+    git commit -m 'msg'暂存区到本地仓库
+    
+    git status 可以查看文件是否进行修改
+
+    git diff 可以查看本地仓库和本地代码的区别
+
+    git add name1 name2 name3 批量add
+    git add . 批量add
+
+    git reset --hard d269b7c 可以回退指定版本
+    git reset --hard HEAD^ 可以回退上一版本
+
+    git log
+    git reflog
+    git log --pretty=oneline
+
+    git reset HEAD 04.txt 会将暂存区的04.txt去掉
+    再通过 git checkout 04.txt 就能回退
+
+    当改了一个文件发现不能进行修改 但此时并没有加入add
+    此时需要  git checkout -- 04.txt 指令进行回退
+
+    git 中删除文件
+    git rm name 
+    git commit -m "msg"
+
+    git 中误删操作 将其还原
+    git checkout -- name
+
+svn  集中式版本管理工具代表
+
+    github 免费的代码仓库 
+
+    码云gitee 
     <p>git push -u origin master  添加到github仓库</p> 
     <p>git remote add origin https://github.com/896518640/gitstud.git 连接远程仓库</p> 
     <p>git clone https://github.com/896518640/gitstud.git</p> 
