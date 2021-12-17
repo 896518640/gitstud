@@ -49,7 +49,7 @@
     git log --pretty=oneline
 
     git reset HEAD 04.txt 会将暂存区的04.txt去掉
-    再通过 git checkout 04.txt 就能回退
+    再通过 git checkout --04.txt 就能回退
 
     当改了一个文件发现不能进行修改 但此时并没有加入add
     此时需要  git checkout -- 04.txt 指令进行回退
@@ -90,6 +90,13 @@ svn  集中式版本管理工具代表
     <p>git stash list 暂存列表</p>
     <p>git stash pop/gut stash apply stash{xx} 暂存回复</p>
     <p>git cherry-pick commitID 应用某次commit到本分支</p>
+    <p>git reset --hard 版本号 版本回退</p>
+    <p>git reset --hard HEAD^ 版本回退</p>  
+    <p>git reset HEAD name 撤销暂存区的更改</p>
+    <p>git checkout --name 撤销工作区的更改</p>
+    <p>git log 查看commit信息 </p>
+    <p>git reflog</p>
+    <p>git log --pretty=oneline</p>
 
     <p>这是新增的功能</p> 
     <p>v1.0.0版本！！</p>
@@ -105,7 +112,7 @@ svn  集中式版本管理工具代表
     <p>git tag 标签内容 版号 给本地指定版号增加标签</p>
     <p>git tag -d 标签内容 取消当前标签内容</p>
 
-    git push origin  --tags 可以将当前本地标签内容推送到仓库
+    <p>git push origin  --tags 可以将当前本地标签内容推送到仓库</p>  
 
  </body>
 </body>
